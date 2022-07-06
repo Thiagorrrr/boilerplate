@@ -1,6 +1,6 @@
 import * as S from './styles'
 
-const Main = ({
+export const Main = ({
   title = 'Sua loja Pet',
   description = 'Sua nova loja pet'
 }) => (
@@ -11,5 +11,3 @@ const Main = ({
     <S.Logo src="img/hero-illustration.svg" alt="Imagem de uma ilustração" />
   </S.Wrapper>
 )
-
-export default Main
