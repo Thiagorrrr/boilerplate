@@ -1,7 +1,15 @@
-const Main = () => (
-  <main>
-    <h1> test</h1>
-  </main>
+import * as S from './styles'
+
+const Main = ({
+  title = 'Sua loja Pet',
+  description = 'Sua nova loja pet'
+}) => (
+  <S.Wrapper>
+    <S.Logo src="img/logo.svg" alt="Imagem de uma logo" />
+    <S.Title>{title}</S.Title>
+    <S.Description>{description} </S.Description>
+    <S.Logo src="img/hero-illustration.svg" alt="Imagem de uma ilustração" />
+  </S.Wrapper>
 )
 
 export default Main
